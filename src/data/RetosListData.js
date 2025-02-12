@@ -7,6 +7,12 @@ export const RetosListData = [
       "Este reto trata del manejo del DOM, de las talbas, de los bucles y de las cadenas.\nTe pide que filtres una tabla que tienes en una página web a partir de los datos que vas tecleando en un campo de texto. Es totalmente dinámico, a medida que el usuario teclea la tabla se debe atualizar.\nPuede filtrar por valores en cualquier columna de la tabla.",
     url: "/reto01",
     tags: ["DOM", "tablas", "bucles", "cadenas"],
+    dificultad: "dificil",
+    tiempoEstimado: 15, // minutos
+    intentosPromedio: 3,
+    popularidad: 8.5, // de 10
+    resueltos: 120,
+    completada: false,
   },
   {
     id: 2,
@@ -17,6 +23,12 @@ export const RetosListData = [
       "Es un reto para que manejes métodos de array. Partiendo de una lista de números deberás conseguir reordenarlos de manera aleatoria.",
     url: "/reto02",
     tags: ["arrays", "bucles"],
+    dificultad: "facil",
+    tiempoEstimado: 10,
+    intentosPromedio: 2,
+    popularidad: 7.8,
+    resueltos: 95,
+    completada: false,
   },
   {
     id: 3,
@@ -26,6 +38,12 @@ export const RetosListData = [
       "Un reto matemático consistente en definir una función capaz de determinar el mínimo común múltiplo de un par de números enteros positivos",
     url: "/reto03",
     tags: ["matemáticas", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 20,
+    intentosPromedio: 4,
+    popularidad: 8.0,
+    resueltos: 110,
+    completada: false,
   },
   {
     id: 4,
@@ -35,6 +53,12 @@ export const RetosListData = [
       "Un reto para manejar arrays. Se trata de una función que a partir de una lista de números enteros devuelve otra lista con los números que están repetidos en la lista original",
     url: "/reto04",
     tags: ["arrays", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 15,
+    intentosPromedio: 3,
+    popularidad: 7.5,
+    resueltos: 100,
+    completada: false,
   },
   {
     id: 5,
@@ -45,6 +69,12 @@ export const RetosListData = [
       "Un reto para quienes están empezando, se trata de crear un script que genere una password seguros, es decir, eu contengo al menos una letra mayúscula, un número y un caracter especial de entre un conjunto dado.",
     url: "/reto05",
     tags: ["cadenas", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 25,
+    intentosPromedio: 5,
+    popularidad: 8.2,
+    resueltos: 130,
+    completada: false,
   },
   {
     id: 6,
@@ -55,9 +85,13 @@ export const RetosListData = [
       "En este reto te planteo que crees una función capaz de ajustar una frase a un ancho determinado sin usar guiones para romper palabras.",
     url: "/reto06",
     tags: ["cadenas", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 20,
+    intentosPromedio: 4,
+    popularidad: 7.9,
+    resueltos: 105,
+    completada: false,
   },
-  // Area de un rectángulo
-
   {
     id: 7,
     title: "Área de un rectángulo",
@@ -66,8 +100,13 @@ export const RetosListData = [
       "Un reto matemático para calcular el área de un rectángulo a partir de su base y su altura.",
     url: "/reto07",
     tags: ["matemáticas", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 10,
+    intentosPromedio: 2,
+    popularidad: 7.6,
+    resueltos: 90,
+    completada: false,
   },
-  // Frecuencia de caracteres
   {
     id: 8,
     title: "Frecuencia de caracteres",
@@ -77,8 +116,13 @@ export const RetosListData = [
       "Un reto para contar la frecuencia de aparición de los caracteres en una cadena de texto.",
     url: "/reto08",
     tags: ["cadenas", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 15,
+    intentosPromedio: 3,
+    popularidad: 8.1,
+    resueltos: 115,
+    completada: false,
   },
-  // De objeto a Array
   {
     id: 9,
     title: "De objeto a Array",
@@ -86,8 +130,13 @@ export const RetosListData = [
     description: "Un reto para convertir un objeto en un array de arrays.",
     url: "/reto09",
     tags: ["objetos", "arrays"],
+    dificultad: "facil",
+    tiempoEstimado: 20,
+    intentosPromedio: 4,
+    popularidad: 7.7,
+    resueltos: 100,
+    completada: false,
   },
-  // Suma de subconjuntos. Recursiva
   {
     id: 10,
     title: "Suma de subconjuntos. Recursiva",
@@ -97,8 +146,13 @@ export const RetosListData = [
       "Un reto para calcular la suma de todos los subconjuntos de un array de números.",
     url: "/reto10",
     tags: ["arrays", "recursividad"],
+    dificultad: "facil",
+    tiempoEstimado: 25,
+    intentosPromedio: 5,
+    popularidad: 7.8,
+    resueltos: 95,
+    completada: false,
   },
-  // Suma de subconjuntos
   {
     id: 11,
     title: "Suma de subconjuntos",
@@ -108,8 +162,13 @@ export const RetosListData = [
       "Un reto para calcular la suma de todos los subconjuntos de un array de números.",
     url: "/reto11",
     tags: ["arrays", "bucles"],
+    dificultad: "facil",
+    tiempoEstimado: 20,
+    intentosPromedio: 4,
+    popularidad: 7.9,
+    resueltos: 105,
+    completada: false,
   },
-  // Una calculadora simple
   {
     id: 12,
     title: "Una calculadora simple",
@@ -118,9 +177,13 @@ export const RetosListData = [
       "Un reto para crear una calculadora simple que realice las operaciones básicas.",
     url: "/reto12",
     tags: ["cadenas", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 15,
+    intentosPromedio: 3,
+    popularidad: 8.0,
+    resueltos: 110,
+    completada: false,
   },
-  // Encontrar una cadena dentro de otra
-
   {
     id: 13,
     title: "Encontrar una cadena dentro de otra",
@@ -128,8 +191,13 @@ export const RetosListData = [
     description: "Un reto para encontrar una cadena dentro de otra.",
     url: "/reto13",
     tags: ["cadenas", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 10,
+    intentosPromedio: 2,
+    popularidad: 7.5,
+    resueltos: 90,
+    completada: false,
   },
-  // Sistema de recuento simple
   {
     id: 14,
     title: "Sistema de recuento simple",
@@ -137,8 +205,13 @@ export const RetosListData = [
     description: "Un reto para crear un sistema de recuento simple.",
     url: "/reto14",
     tags: ["cadenas", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 20,
+    intentosPromedio: 4,
+    popularidad: 7.6,
+    resueltos: 95,
+    completada: false,
   },
-  // Implementar una lista enlazada doble
   {
     id: 15,
     title: "Implementar una lista enlazada doble",
@@ -146,8 +219,13 @@ export const RetosListData = [
     description: "Un reto para implementar una lista enlazada doble.",
     url: "/reto15",
     tags: ["estructuras de datos", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 25,
+    intentosPromedio: 5,
+    popularidad: 7.7,
+    resueltos: 100,
+    completada: false,
   },
-  // Insertar ceros en una lista
   {
     id: 16,
     title: "Insertar ceros en una lista",
@@ -155,8 +233,13 @@ export const RetosListData = [
     description: "Un reto para insertar ceros en una lista.",
     url: "/reto16",
     tags: ["estructuras de datos", "funciones"],
+    dificultad: "facil",
+    tiempoEstimado: 15,
+    intentosPromedio: 3,
+    popularidad: 7.8,
+    resueltos: 105,
+    completada: false,
   },
-  // Permutaciones de caracteres
   {
     id: 17,
     title: "Permutaciones de caracteres",
@@ -166,8 +249,13 @@ export const RetosListData = [
       "Un reto para calcular las permutaciones de una cadena de caracteres.",
     url: "/reto17",
     tags: ["cadenas", "recursividad"],
+    dificultad: "intermedio",
+    tiempoEstimado: 30,
+    intentosPromedio: 6,
+    popularidad: 8.2,
+    resueltos: 120,
+    completada: false,
   },
-  // Combinaciones de caracteres
   {
     id: 18,
     title: "Combinaciones de caracteres",
@@ -177,8 +265,13 @@ export const RetosListData = [
       "Un reto para calcular las combinaciones de una cadena de caracteres.",
     url: "/reto18",
     tags: ["cadenas", "recursividad"],
+    dificultad: "avanzado",
+    tiempoEstimado: 35,
+    intentosPromedio: 7,
+    popularidad: 8.0,
+    resueltos: 110,
+    completada: false,
   },
-  // Paréntesis, llaves, corchetes ¿correctos?
   {
     id: 19,
     title: "Paréntesis, llaves, corchetes ¿correctos?",
@@ -188,8 +281,13 @@ export const RetosListData = [
       "Un reto para comprobar si los paréntesis, llaves y corchetes están correctamente anidados.",
     url: "/reto19",
     tags: ["cadenas", "pilas"],
+    dificultad: "intermedio",
+    tiempoEstimado: 25,
+    intentosPromedio: 5,
+    popularidad: 7.9,
+    resueltos: 105,
+    completada: false,
   },
-  // Cifrado César
   {
     id: 20,
     title: "Cifrado César",
@@ -199,8 +297,13 @@ export const RetosListData = [
       "Un reto para cifrar y descifrar un mensaje usando el cifrado César.",
     url: "/reto20",
     tags: ["cadenas", "funciones"],
+    dificultad: "intermedio",
+    tiempoEstimado: 20,
+    intentosPromedio: 4,
+    popularidad: 8.1,
+    resueltos: 115,
+    completada: false,
   },
-  // Array ¿en orden ascendente?
   {
     id: 21,
     title: "Array ¿en orden ascendente?",
@@ -210,8 +313,13 @@ export const RetosListData = [
       "Un reto para comprobar si un array está ordenado de manera ascendente.",
     url: "/reto21",
     tags: ["arrays", "bucles"],
+    dificultad: "intermedio",
+    tiempoEstimado: 15,
+    intentosPromedio: 3,
+    popularidad: 7.8,
+    resueltos: 100,
+    completada: false,
   },
-  // Anagramas
   {
     id: 22,
     title: "Anagramas",
@@ -219,5 +327,11 @@ export const RetosListData = [
     description: "Un reto para comprobar si dos cadenas son anagramas.",
     url: "/reto22",
     tags: ["cadenas", "funciones"],
+    dificultad: "intermedio",
+    tiempoEstimado: 20,
+    intentosPromedio: 4,
+    popularidad: 8.0,
+    resueltos: 110,
+    completada: false,
   },
 ];

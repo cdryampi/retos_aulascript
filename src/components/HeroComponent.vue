@@ -60,7 +60,7 @@
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
           <a
-            href="#"
+            :href="reto.url"
             class="rounded-md bg-primary-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-primary-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
             >Iniciar</a
           >
@@ -103,6 +103,16 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, onMounted } from "vue";
+
+const props = defineProps({
+  reto: Object,
+});
+
+const reto = props.reto;
+
+onMounted(() => {});
+</script>
 
 <style lang="scss" scoped></style>
