@@ -3,9 +3,11 @@ import "./style.css";
 import App from "./App.vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import router from "./router";
 
-createApp(App).mount("#app");
-
+const app = createApp(App);
+app.use(router);
+app.mount("#app");
 // Inicializa AOS
 AOS.init({
   duration: 800, // Duración en ms

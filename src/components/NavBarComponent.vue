@@ -57,8 +57,10 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { navbarData } from "../data/navbarData";
+import { ref, defineProps } from "vue";
+const props = defineProps({
+  menu: Array,
+});
 
-const menu = ref(navbarData);
+const menu = ref(props.menu);
 </script>

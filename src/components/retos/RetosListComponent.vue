@@ -7,11 +7,12 @@
     </h2>
 
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
-      <li
+      <router-link
         class="mb-10 ms-6"
         v-for="(reto, index) in retosList"
         :key="reto.id"
         :data-aos="index % 2 === 0 ? 'zoom-in-right' : 'zoom-out'"
+        :to="'/reto/' + reto.id"
       >
         <div class="flex items-center mb-2 gap-1.5">
           <span
@@ -74,7 +75,7 @@
           {{ reto.dificultad === "intermedio" ? "⭐⭐" : "" }}
           {{ reto.dificultad === "dificil" ? "⭐⭐⭐" : "" }}
         </div>
-      </li>
+      </router-link>
       <div
         class="fter:h-px my-24 flex items-center before:h-px before:flex-1 before:bg-gray-300 before:content-[''] after:h-px after:flex-1 after:bg-gray-300 after:content-['']"
       >
