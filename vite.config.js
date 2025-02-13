@@ -6,6 +6,8 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
   server: {
-    historyApiFallback: true, // 👈 Esto redirige todas las rutas al frontend
+    watch: {
+      usePolling: true,
+    },
   },
 });

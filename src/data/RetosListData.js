@@ -13,6 +13,8 @@ export const RetosListData = [
     popularidad: 8.5, // de 10
     resueltos: 120,
     completada: false,
+    component: "FiltradoTablas",
+    github_url: "https://github.com/cdryampi/",
   },
   {
     id: 2,
