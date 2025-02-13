@@ -1,6 +1,6 @@
 <template>
   <div class="p-4 bg-gray-100 text-black rounded-md">
-    <h3 class="text-xl font- text-center">
+    <h3 class="text-xl font-bold text-center">
       Filtro de usuarios por nombre con tablas
     </h3>
 
@@ -62,10 +62,10 @@
             <img
               class="w-10 h-10 rounded-full"
               :src="usuario.image"
-              alt="Jese image"
+              :alt="`${usuario.name} image`"
             />
             <div class="ps-3">
-              <div class="text-base font-semibold">Neil Sims</div>
+              <div class="text-base font-semibold">{{ usuario.name }}</div>
               <div class="font-normal text-gray-500">
                 {{ usuario.email }}
               </div>
@@ -74,8 +74,13 @@
           <td class="px-6 py-4">{{ usuario.position }}</td>
           <td class="px-6 py-4">
             <div class="flex items-center">
-              <div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div>
-              Online
+              <div
+                class="h-2.5 w-2.5 rounded-full ml-2 me-2"
+                :class="
+                  usuario.status == 'Online' ? 'bg-green-500' : 'bg-red-500'
+                "
+              ></div>
+              {{ usuario.status }}
             </div>
           </td>
         </tr>
@@ -107,7 +112,7 @@ const usuarios = ref([
     name: "Bonnie Green",
     position: "Angular Developer",
     status: "Online",
-    email: "boonie.green@flowbite.com",
+    email: "bonnie.green@flowbite.com",
     image: "/images/ejercicio_1/profile-picture-2.jpg",
   },
   {
