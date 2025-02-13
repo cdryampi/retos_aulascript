@@ -12,7 +12,7 @@ import RetosListComponent from "../components/retos/RetosListComponent.vue";
 import RetoHeroRandomComponent from "../components/retos/RetoHeroRandomComponent.vue";
 import RetoEstadisticasComponent from "../components/retos/RetoEstadisticasComponent.vue";
 import BrowserTagsComponent from "../components/tags/BrowserTagsComponent.vue";
-import { RetosListData } from "../data/retosListData.js";
+import { RetosListData } from "../data/retosListData";
 
 // Composables
 
