@@ -1,0 +1,35 @@
+name: 🚀 Deploy a GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Se ejecutará cuando haya un push a la rama `main`
+
+permissions:
+  contents: write # Permite hacer commits a `gh-pages`
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛠️ Clonar el Repositorio
+        uses: actions/checkout@v4
+
+      - name: 🔧 Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: 📦 Instalar Dependencias
+        run: npm install
+
+      - name: 🏗️ Construir el Proyecto
+        run: npm run build
+
+      - name: 🚀 Desplegar a GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist # 📁 La carpeta `dist/` es donde Vite genera la web
+          clean: true

@@ -14,7 +14,8 @@ export const RetosListData = [
     resueltos: 120,
     completada: false,
     component: "FiltradoTablas",
-    github_url: "https://github.com/cdryampi/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/FiltradoTablas.vue",
   },
   {
     id: 2,
