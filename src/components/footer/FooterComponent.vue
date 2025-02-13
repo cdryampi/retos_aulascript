@@ -13,6 +13,7 @@
             >Aula<span class="text-primary">Script</span></span
           >
         </router-link>
+
         <ul
           class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
@@ -20,12 +21,24 @@
             v-for="inicio in footerLinks"
             :key="inicio.id + '-' + inicio.title"
           >
-            <a
-              :href="inicio.url"
-              :title="inicio.title_url"
+            <router-link
+              v-if="!inicio.external"
+              :to="{
+                path: inicio.url,
+              }"
+              :title="inicio.title"
               class="block py-2 px-3 text-white bg-primary-700 rounded-sm md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-primary-500 hover:text-primary-500"
-              >{{ inicio.title }}</a
+              >{{ inicio.title }}
+            </router-link>
+            <a
+              v-else
+              :href="inicio.url"
+              :title="inicio.title"
+              class="block py-2 px-3 text-white bg-primary-700 rounded-sm md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-primary-500 hover:text-primary-500"
+              target="_blank"
             >
+              {{ inicio.title }}
+            </a>
           </li>
         </ul>
       </div>
