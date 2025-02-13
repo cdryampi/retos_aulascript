@@ -14,7 +14,7 @@ import { ref } from "vue";
 // Datos de los retos
 
 import { footerData } from "@/data/footerData.js";
-import { navbarData } from "@/data/navbarData";
+import { navbarData } from "@/data/navbarData.js";
 
 const menu = ref(navbarData);
 
