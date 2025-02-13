@@ -9,7 +9,7 @@
     </div>
 
     <section
-      class="bg-center p-5 mb-25 mt-25 bg-no-repeat bg-[url('images/code.jpg')] bg-cover bg-primary-700 bg-blend-multiply"
+      class="bg-center p-5 mb-25 mt-25 bg-no-repeat bg-[url('/images/code.jpg')] bg-cover bg-primary-700 bg-blend-multiply"
       data-aos="fade-right"
     >
       <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
