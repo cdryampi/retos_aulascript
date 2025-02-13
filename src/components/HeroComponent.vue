@@ -59,14 +59,19 @@
           a resolverlos!
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a
-            :href="reto.url"
+          <router-link
+            :to="'/reto/' + reto.id"
             class="rounded-md bg-primary-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-primary-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
-            >Iniciar</a
+            >Iniciar</router-link
           >
           <!-- Ir al reto 1 -->
-          <a href="#" class="text-sm/6 font-semibold text-gray-900"
-            >Ver todos los retos realizados <span aria-hidden="true">→</span></a
+          <router-link
+            :to="{
+              path: '/retos',
+            }"
+            class="text-sm/6 font-semibold text-gray-900"
+            >Ver todos los retos realizados
+            <span aria-hidden="true">→</span></router-link
           >
           <!-- Ir a la lista de los retos -->
         </div>

@@ -2,15 +2,17 @@
   <footer class="bg-white dark:bg-gray-900 m-4 pt-10">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
-        <a
-          href="https://www.aulascript.com/index.html"
+        <router-link
+          :to="{
+            path: '/',
+          }"
           class="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
             >Aula<span class="text-primary">Script</span></span
           >
-        </a>
+        </router-link>
         <ul
           class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >

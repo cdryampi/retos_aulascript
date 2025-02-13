@@ -6,7 +6,7 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
-  base: "/",
+  base: "/retos_aulascript/",
   server: {
     watch: {
       usePolling: true,
