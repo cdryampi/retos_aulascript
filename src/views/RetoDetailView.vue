@@ -77,7 +77,7 @@
 
 <script setup>
 import { computed, defineAsyncComponent } from "vue";
-import { RetosListData } from "../data/retosListData";
+import { RetosListData } from "@/data/retosListData";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
@@ -89,7 +89,7 @@ const retoComponent = computed(() => {
   if (!reto.value) return null;
   try {
     return defineAsyncComponent(() =>
-      import(`../retos/${reto.value.component}.vue`)
+      import(`@/retos/${reto.value.component}.vue`)
     );
   } catch (error) {
     console.warn("Error cargando el componente:", error);
