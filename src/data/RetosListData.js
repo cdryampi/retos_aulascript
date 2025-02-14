@@ -50,7 +50,7 @@ export const RetosListData = [
     intentosPromedio: 4,
     popularidad: 8.0,
     resueltos: 110,
-    completada: false,
+    completada: true,
     component: "MinimoComunMultiplo",
     github_url:
       "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/MinimoComunMultiplo.vue",
@@ -69,6 +69,8 @@ export const RetosListData = [
     popularidad: 7.5,
     resueltos: 100,
     completada: false,
+    component: "ItemsRepetidosArray",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 5,
