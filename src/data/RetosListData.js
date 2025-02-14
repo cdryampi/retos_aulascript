@@ -33,10 +33,9 @@ export const RetosListData = [
     intentosPromedio: 2,
     popularidad: 7.8,
     resueltos: 95,
-    completada: false,
+    completada: true,
     component: "OrdenarAleatoriamente",
-    github_url:
-      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/FiltradoTablas.vue",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 3,
@@ -52,6 +51,8 @@ export const RetosListData = [
     popularidad: 8.0,
     resueltos: 110,
     completada: false,
+    component: "MinimoComunMultiplo",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 4,
