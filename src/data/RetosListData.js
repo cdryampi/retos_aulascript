@@ -68,9 +68,10 @@ export const RetosListData = [
     intentosPromedio: 3,
     popularidad: 7.5,
     resueltos: 100,
-    completada: false,
+    completada: true,
     component: "ItemsRepetidosArray",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/ItemsRepetidosArray.vue",
   },
   {
     id: 5,
@@ -86,7 +87,10 @@ export const RetosListData = [
     intentosPromedio: 5,
     popularidad: 8.2,
     resueltos: 130,
-    completada: false,
+    completada: true,
+    component: "GeneradorPassword",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/GeneradorPassword.vue",
   },
   {
     id: 6,
