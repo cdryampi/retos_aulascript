@@ -52,7 +52,8 @@ export const RetosListData = [
     resueltos: 110,
     completada: false,
     component: "MinimoComunMultiplo",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/MinimoComunMultiplo.vue",
   },
   {
     id: 4,

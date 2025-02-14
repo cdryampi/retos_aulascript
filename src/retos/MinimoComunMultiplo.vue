@@ -39,14 +39,14 @@
         v-model="number2"
       />
     </div>
-    <div class="container flex justify-items-center gap-5">
+    <div class="container flex flex-col place-items-center gap-5 mt-10">
       <button
         @click="result"
-        class="bg-primary-500 hover:bg-primary-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+        class="bg-primary-500 hover:bg-primary-700 text-white font-bold py-2 px-4 rounded cursor-pointe w-25"
       >
         calcular resultado
       </button>
-      <p class="text-2xl font-bold">{{ resultValue }}</p>
+      <p class="font-bold text-5xl">{{ resultValue }}</p>
     </div>
   </div>
 </template>

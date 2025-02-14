@@ -26,8 +26,11 @@
         <div
           class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
         >
-          <a
-            :href="reto.url"
+          <router-link
+            :to="{
+              path: 'retos/' + reto.id,
+              params: { id: reto.id },
+            }"
             class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
           >
             ver más
@@ -46,7 +49,7 @@
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
-          </a>
+          </router-link>
           <button
             @click="EmitReTo()"
             type="button"
@@ -62,6 +65,7 @@
 
 <script setup>
 import { defineProps, defineEmits } from "vue";
+import router from "../../router";
 
 const props = defineProps({
   reto: Object,
