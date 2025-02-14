@@ -1,3 +1,5 @@
+import { comment } from "postcss";
+
 export const RetosListData = [
   {
     id: 1,
@@ -12,7 +14,7 @@ export const RetosListData = [
     intentosPromedio: 3,
     popularidad: 8.5, // de 10
     resueltos: 120,
-    completada: false,
+    completada: true,
     component: "FiltradoTablas",
     github_url:
       "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/FiltradoTablas.vue",
@@ -32,6 +34,9 @@ export const RetosListData = [
     popularidad: 7.8,
     resueltos: 95,
     completada: false,
+    component: "OrdenarAleatoriamente",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/FiltradoTablas.vue",
   },
   {
     id: 3,
