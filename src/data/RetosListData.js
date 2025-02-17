@@ -194,6 +194,8 @@ export const RetosListData = [
     popularidad: 7.9,
     resueltos: 105,
     completada: false,
+    component: "SumaSubconjuntoSinBackTrack",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 12,
