@@ -54,9 +54,12 @@
           </td>
         </tr>
       </tbody>
-      <tfoot class="footer_table">
-        <tr>
-          <div class="pt-5 flex place-content-center gap-3.5">
+    </table>
+
+    <div class="flex justify-center mt-5">
+      <div class="footer_table">
+        <div class="pt-5 flex place-content-center gap-3.5">
+          <div class="flex gap-3">
             <input
               v-model="inputName"
               type="text"
@@ -113,17 +116,16 @@
               Add User
             </button>
           </div>
-          <div
-            class="pt-5 flex place-content-center gap-3.5 flex-col"
-            v-if="!isValid"
-          >
-            <div v-for="error in errores" :key="error" class="text-red-500">
-              <p>{{ error }}</p>
-            </div>
+        </div>
+        <div v-if="!isValid" class="flex place-content-center gap-3.5">
+          <div class="text-red-500">
+            <ul>
+              <li v-for="error in errores" :key="error">{{ error }}</li>
+            </ul>
           </div>
-        </tr>
-      </tfoot>
-    </table>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -225,6 +227,7 @@ const AddUser = () => {
 <style scoped>
 .footer_table {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 3.5rem;
 }
