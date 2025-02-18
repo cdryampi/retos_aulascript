@@ -27,6 +27,7 @@ const pedirNumero = (number = 0) => {
     }
   }
   console.log(lista); // 0, 1, 2, 3, 4, 5
+  return lista;
 };
 
 pedirNumero(5);
