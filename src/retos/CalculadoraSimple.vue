@@ -184,7 +184,6 @@ const addNumber = (num) => {
     input_number.value = input_number.value * 10 + num;
   }
   is_calculated.value = false;
-  fisrt_cast.value = true;
 };
 
 const calculate = () => {
@@ -271,6 +270,7 @@ const castOperator = (value) => {
       break;
   }
   input_number.value = 0; // reiniciamos el valor del número ingresado.
+  fisrt_cast.value = true; // cambiamos el estado de la primera operación. Por la resta.
 };
 
 const clearOperator = () => {
