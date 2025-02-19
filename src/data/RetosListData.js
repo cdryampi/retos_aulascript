@@ -210,7 +210,9 @@ export const RetosListData = [
     intentosPromedio: 3,
     popularidad: 8.0,
     resueltos: 110,
-    completada: false,
+    completada: true,
+    component: "CalculadoraSimple",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 13,
