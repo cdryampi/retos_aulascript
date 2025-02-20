@@ -53,8 +53,8 @@
               class=""
               v-if="!reverse"
               :class="{
-                'bg-green-900': findedValue.value == item.value,
-                'bg-primary-950': findedValue.value != item.value,
+                'bg-green-900': findedValue?.value == item.value,
+                'bg-primary-950': findedValue?.value != item.value,
               }"
             >
               <div class="flex items-center space-x-4">
@@ -62,9 +62,9 @@
                   <span
                     class="text-lg font-bo p-2.5"
                     :class="{
-                      'text-gray-50': findedValue.value == item.value,
+                      'text-gray-50': findedValue?.value == item.value,
                       'text-white dark:text-black':
-                        findedValue.value != item.value,
+                        findedValue?.value != item.value,
                     }"
                     >{{ item.value }}</span
                   >
@@ -75,8 +75,9 @@
               v-for="(item, index) in array.return_reverse_array()"
               :key="index"
               :class="{
-                'bg-red-950': findedValue.value == item.value,
-                'bg-primary-950 dark:bg-white': findedValue.value != item.value,
+                'bg-red-950': findedValue?.value == item.value,
+                'bg-primary-950 dark:bg-white':
+                  findedValue?.value != item.value,
               }"
               v-if="reverse"
             >
@@ -85,9 +86,9 @@
                   <span
                     class="text-lg font-bo p-2.5"
                     :class="{
-                      'text-gray-50': findedValue.value == item.value,
+                      'text-gray-50': findedValue?.value == item.value,
                       'text-white dark:text-black':
-                        findedValue.value != item.value,
+                        findedValue?.value != item.value,
                     }"
                     >{{ item.value }}</span
                   >
