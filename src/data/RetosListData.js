@@ -35,7 +35,8 @@ export const RetosListData = [
     resueltos: 95,
     completada: true,
     component: "OrdenarAleatoriamente",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/OrdenarAleatoriamente.vue",
   },
   {
     id: 3,
@@ -108,7 +109,8 @@ export const RetosListData = [
     resueltos: 105,
     completada: true,
     component: "DivisorFrase",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/DivisorFrase.vue",
   },
   {
     id: 7,
@@ -125,7 +127,8 @@ export const RetosListData = [
     resueltos: 90,
     completada: true,
     component: "AreaRectangulo",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/AreaRectangulo.vue",
   },
   {
     id: 8,
@@ -143,7 +146,8 @@ export const RetosListData = [
     resueltos: 115,
     completada: true,
     component: "FrecuenciaCaracteres",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/FrecuenciaCaracteres.vue",
   },
   {
     id: 9,
@@ -159,7 +163,8 @@ export const RetosListData = [
     resueltos: 100,
     completada: true,
     component: "ArrayDeObjetos",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/ArrayDeObjetos.vue",
   },
   {
     id: 10,
@@ -177,7 +182,8 @@ export const RetosListData = [
     resueltos: 95,
     completada: true,
     component: "SumaSubconjuntoBackTrack",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/SumaSubconjuntoBackTrack.vue",
   },
   {
     id: 11,
@@ -195,7 +201,8 @@ export const RetosListData = [
     resueltos: 105,
     completada: true,
     component: "SumaSubconjuntoSinBackTrack",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/SumaSubconjuntoSinBackTrack.vue",
   },
   {
     id: 12,
@@ -212,7 +219,8 @@ export const RetosListData = [
     resueltos: 110,
     completada: true,
     component: "CalculadoraSimple",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/CalculadoraSimple.vue",
   },
   {
     id: 13,
@@ -228,7 +236,8 @@ export const RetosListData = [
     resueltos: 90,
     completada: true,
     component: "BuscarSubCadena",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/BuscarSubCadena.vue",
   },
   {
     id: 14,
@@ -244,7 +253,8 @@ export const RetosListData = [
     resueltos: 95,
     completada: true,
     component: "RecuentoSimple",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/RecuentoSimple.vue",
   },
   {
     id: 15,
@@ -260,7 +270,8 @@ export const RetosListData = [
     resueltos: 100,
     completada: true,
     component: "ListaDoblementeEnlazada",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/ListaDoblementeEnlazada.vue",
   },
   {
     id: 16,
