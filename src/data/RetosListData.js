@@ -285,7 +285,9 @@ export const RetosListData = [
     intentosPromedio: 3,
     popularidad: 7.8,
     resueltos: 105,
-    completada: false,
+    completada: true,
+    component: "InsertarCeros",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 17,
@@ -301,7 +303,9 @@ export const RetosListData = [
     intentosPromedio: 6,
     popularidad: 8.2,
     resueltos: 120,
-    completada: false,
+    completada: true,
+    component: "PermutacionesElementos",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 18,
@@ -317,7 +321,9 @@ export const RetosListData = [
     intentosPromedio: 7,
     popularidad: 8.0,
     resueltos: 110,
-    completada: false,
+    completada: true,
+    component: "PermutacionesConIndex",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 19,
@@ -333,7 +339,9 @@ export const RetosListData = [
     intentosPromedio: 5,
     popularidad: 7.9,
     resueltos: 105,
-    completada: false,
+    completada: true,
+    component: "ErroresContador",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 20,
