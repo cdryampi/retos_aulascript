@@ -1,26 +1,28 @@
 <template>
   <div class="container mx-auto p-4" id="retos">
     <h2
-      class="text-5xl font-bold text-gray-900 dark:text-white text-center mb-16"
+      class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white text-center mb-8 md:mb-16"
     >
       Roadmap de Retos
     </h2>
 
     <div class="relative">
-      <!-- Línea del roadmap en primary-950 -->
+      <!-- Línea del roadmap (visible solo en pantallas grandes) -->
       <div
-        class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-primary-950 h-full rounded-lg"
+        class="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-primary-950 h-full rounded-lg"
       ></div>
 
       <div
         v-for="(reto, index) in retosList"
         :key="reto.id"
-        class="flex items-center mb-3 relative group"
-        :class="{ 'flex-row-reverse': index % 2 !== 0 }"
+        class="flex flex-col md:flex-row items-center mb-6 relative group"
+        :class="{ 'md:flex-row-reverse': index % 2 !== 0 }"
         :data-aos="'fade-' + (index % 2 === 0 ? 'right' : 'left')"
       >
-        <!-- Círculo en la línea -->
-        <div class="absolute left-1/2 transform -translate-x-1/2">
+        <!-- Círculo en la línea (solo en pantallas grandes) -->
+        <div
+          class="hidden lg:flex absolute left-1/2 transform -translate-x-1/2"
+        >
           <div
             class="w-6 h-6 bg-primary-950 rounded-full flex items-center justify-center ring-8 ring-white dark:ring-gray-900"
           >
@@ -36,48 +38,37 @@
           </div>
         </div>
 
-        <!-- Contenedor de contenido -->
+        <!-- Contenedor del reto -->
         <router-link
           :to="'/reto/' + reto.id"
-          class="w-1/2 p-6 bg-white shadow-lg rounded-lg dark:bg-gray-800 transition-all hover:scale-105"
-          :class="{ 'ml-auto': index % 2 !== 0, 'mr-auto': index % 2 === 0 }"
+          class="p-6 bg-white shadow-lg rounded-lg dark:bg-gray-800 transition-all hover:scale-105 w-full sm:w-3/4 md:w-1/2 lg:w-1/2"
+          :class="{
+            'md:ml-auto': index % 2 !== 0,
+            'md:mr-auto': index % 2 === 0,
+          }"
         >
           <h3
             class="text-lg font-semibold text-gray-900 dark:text-white flex items-center"
           >
             {{ reto.title }}
+          </h3>
+          <div class="flex items-center flex-wrap py-3">
             <span
               v-for="tag in reto.tags"
               :key="tag"
-              class="bg-blue-100 text-primary-800 text-sm font-medium ml-3 px-2.5 py-0.5 rounded-sm dark:bg-primary-900 dark:text-primary-300"
+              class="bg-blue-100 text-primary-800 text-sm font-medium ml-2 px-2.5 py-0.5 rounded-sm dark:bg-primary-900 dark:text-primary-300"
             >
               {{ tag }}
             </span>
-          </h3>
+          </div>
 
-          <time class="block mb-2 text-sm text-gray-400 dark:text-gray-500">{{
-            reto.subTile
-          }}</time>
+          <small class="block mb-2 text-sm text-gray-400 dark:text-gray-500">
+            {{ reto.subTile }}
+          </small>
 
           <p class="text-base text-gray-500 dark:text-gray-400">
             {{ reto.description }}
           </p>
-
-          <a
-            v-if="reto.code_url"
-            :href="reto.code_url"
-            class="mt-2 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:text-white"
-          >
-            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-              <path
-                d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"
-              />
-              <path
-                d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-              />
-            </svg>
-            Descargar código JS
-          </a>
 
           <div>
             {{ reto.dificultad === "facil" ? "⭐" : "" }}
@@ -88,12 +79,12 @@
       </div>
 
       <!-- Botón para cargar más retos con spinner -->
-      <div class="flex justify-center my-15 relative">
+      <div class="flex justify-center my-10 relative">
         <button
           type="button"
           @click="LoadRetos"
           v-if="!spinner && retosList.length < RetosListData.length"
-          class="absolute p-5 flex items-center mt-5 rounded-full border border-primary-300 bg-primary-950 px-4 py-2 text-sm font-medium text-primary-100 hover:bg-primary-100 hover:text-primary-950 transition-all duration-300"
+          class="p-4 flex items-center rounded-full border border-primary-300 bg-primary-950 text-sm font-medium text-primary-100 hover:bg-primary-100 hover:text-primary-950 transition-all duration-300"
         >
           <svg class="mr-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path
@@ -113,7 +104,6 @@
             class="w-5 h-5 mr-3 text-primary-200 animate-spin"
             viewBox="0 0 100 101"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <circle
               cx="50"

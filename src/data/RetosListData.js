@@ -287,7 +287,8 @@ export const RetosListData = [
     resueltos: 105,
     completada: true,
     component: "InsertarCeros",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/InsertarCeros.vue",
   },
   {
     id: 17,
@@ -305,7 +306,8 @@ export const RetosListData = [
     resueltos: 120,
     completada: true,
     component: "PermutacionesElementos",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/PermutacionesElementos.vue",
   },
   {
     id: 18,
@@ -323,7 +325,8 @@ export const RetosListData = [
     resueltos: 110,
     completada: true,
     component: "PermutacionesConIndex",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/PermutacionesConIndex.vue",
   },
   {
     id: 19,
@@ -341,7 +344,8 @@ export const RetosListData = [
     resueltos: 105,
     completada: true,
     component: "ErroresContador",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/ErroresContador.vue",
   },
   {
     id: 20,
@@ -359,7 +363,8 @@ export const RetosListData = [
     resueltos: 115,
     completada: true,
     component: "CifradoCesar",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/CifradoCesar.vue",
   },
   {
     id: 21,
@@ -377,7 +382,8 @@ export const RetosListData = [
     resueltos: 100,
     completada: true,
     component: "ArrayAscendente",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/ArrayAscendente.vue",
   },
   {
     id: 22,
@@ -391,8 +397,9 @@ export const RetosListData = [
     intentosPromedio: 4,
     popularidad: 8.0,
     resueltos: 110,
-    completada: false,
+    completada: true,
     component: "Anagrama",
-    github_url: "https://github.com/cdryampi/retos_aulascript/",
+    github_url:
+      "https://github.com/cdryampi/retos_aulascript/blob/main/src/retos/Anagrama.vue",
   },
 ];

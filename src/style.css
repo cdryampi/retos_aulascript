@@ -13,3 +13,8 @@
   --color-primary-900: #2a2a56;
   --color-primary-950: #111137;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}

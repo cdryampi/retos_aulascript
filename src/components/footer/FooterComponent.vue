@@ -27,14 +27,14 @@
                 path: inicio.url,
               }"
               :title="inicio.title"
-              class="block py-2 px-3 text-white bg-primary-700 rounded-sm md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-primary-500 hover:text-primary-500"
+              class="block py-2 px-3 text-black bg-primary-100 rounded-sm md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-primary-500 hover:text-primary-500"
               >{{ inicio.title }}
             </router-link>
             <a
               v-else
               :href="inicio.url"
               :title="inicio.title"
-              class="block py-2 px-3 text-white bg-primary-700 rounded-sm md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-primary-500 hover:text-primary-500"
+              class="block py-2 px-3 text-black bg-primary-100 rounded-sm md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-primary-500 hover:text-primary-500"
               target="_blank"
             >
               {{ inicio.title }}
