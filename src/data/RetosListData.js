@@ -357,7 +357,9 @@ export const RetosListData = [
     intentosPromedio: 4,
     popularidad: 8.1,
     resueltos: 115,
-    completada: false,
+    completada: true,
+    component: "CifradoCesar",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 21,
@@ -373,7 +375,9 @@ export const RetosListData = [
     intentosPromedio: 3,
     popularidad: 7.8,
     resueltos: 100,
-    completada: false,
+    completada: true,
+    component: "ArrayAscendente",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
   {
     id: 22,
@@ -388,5 +392,7 @@ export const RetosListData = [
     popularidad: 8.0,
     resueltos: 110,
     completada: false,
+    component: "Anagrama",
+    github_url: "https://github.com/cdryampi/retos_aulascript/",
   },
 ];
