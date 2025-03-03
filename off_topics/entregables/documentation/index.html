@@ -3,12 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Django Base</title>
+    <title>publicación con Github Pages</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <nav id="navbar">
-      <header></header>
+      <header>Manual de Github Pages</header>
+      <ul>
+        <li><a class="nav-link" href="#Introducción">Introducción</a></li>
+        <li><a class="nav-link" href="#Primer_commit">Primer commit</a></li>
+        <li>
+          <a class="nav-link" href="#Configuración_github"
+            >Configuración Github</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Supervisar_el_proceso"
+            >Supervisar el proceso</a
+          >
+        </li>
+        <li><a class="nav-link" href="#URL_final">URL final</a></li>
+        <li><a class="nav-link" href="#Fuerza_bruta">Fuerza bruta</a></li>
+        <li><a class="nav-link" href="#Referencia">Referencia</a></li>
+      </ul>
     </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introducción">
+        <header>Introducción</header>
+        <article>
+          <p>
+            Github Pages es un servicio de alojamiento web gratuito que permite
+            a los usuarios publicar sitios web estáticos generados con
+            tecnologías web como HTML, CSS y JavaScript.
+          </p>
+          <p>
+            Este manual proporciona una guía paso a paso para crear un sitio web
+            utilizando Github Pages.
+          </p>
+          <ul>
+            <li>configuración de un repositorio de Github</li>
+            <li>creación de un sitio web estático</li>
+            <li>publicación del sitio web en Github Pages</li>
+            <li>
+              obtención de la URL final del sitio web para compartir con otros
+            </li>
+            <li>
+              supervisión del proceso de implementación y solución de problemas
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Primer_commit">
+        <header>Primer commit</header>
+        <article>
+          <p>
+            Para comenzar, cree un nuevo repositorio en Github y clone el
+            repositorio en su máquina local.
+          </p>
+          <pre><code>
+            git clone
+            </code></pre>
+          <p>Cree un archivo HTML y agregue algo de contenido.</p>
+          <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+            &lt;title&gt;Mi sitio web&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;h1&gt;Hola, mundo!&lt;/h1&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </code></pre>
+          <p>Agregue el archivo al repositorio y realice un commit.</p>
+          <pre><code>
+            git add index.html
+            git commit -m "primer commit"
+            </code></pre>
+          <p>Finalmente, envíe los cambios al repositorio remoto.</p>
+          <pre><code>
+            git push origin master
+            </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Configuración_github">
+        <header>Configuración Github</header>
+        <article>
+          <p>
+            Vaya a la configuración del repositorio en Github y desplácese hacia
+            abajo hasta la sección de `Pages`.
+          </p>
+          <p>
+            En la sección de Github Pages, seleccione la rama principal como
+            fuente y haga clic en Guardar.
+          </p>
+          <p>
+            <strong
+              >Tienes que tener el repositorio público para que funcione o pagar
+              para poder publicar en privado.</strong
+            >
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Supervisar_el_proceso">
+        <header>Supervisar el proceso</header>
+        <article>
+          <p>
+            Una vez que se haya configurado Github Pages, puede supervisar el
+            proceso de implementación en la pestaña `Actions` de su repositorio.
+          </p>
+          <p>
+            En la pestaña de `Actions`, puede ver el estado de la implementación
+            y solucionar problemas si algo sale mal.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="URL_final">
+        <header>URL final</header>
+        <article>
+          <p>
+            Después de que se complete la implementación, su sitio web estará
+            disponible en la URL proporcionada en la sección de Github Pages de
+            la configuración del repositorio.
+          </p>
+          <p>
+            Puede compartir esta URL con otros para que puedan ver su sitio web
+            en línea.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Fuerza_bruta">
+        <header>Fuerza bruta</header>
+        <article>
+          <p>
+            Si se quiere forzalo desde el terminal del editor de código, se
+            tiene que instalar el paquete de Github Pages con nodeJS.
+          </p>
+
+          <pre><code>
+              npm install gh-pages
+              </code></pre>
+          <p>
+            Luego se tiene que agregar el script en el archivo package.json.
+          </p>
+          <pre><code>
+              "scripts": {
+                "deploy": "gh-pages -d build"
+              }
+              </code></pre>
+          <p>Finalmente se tiene que ejecutar el script.</p>
+          <pre><code>
+              npm run deploy
+              </code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Referencia">
+        <header>Referencia</header>
+        <article>
+          <p>
+            Para obtener más información sobre Github Pages, consulte la
+            documentación oficial en
+            <li>
+              <a
+                href="https://pages.github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >https://pages.github.com/</a
+              >.
+            </li>
+          </p>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

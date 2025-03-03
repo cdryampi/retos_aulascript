@@ -55,6 +55,9 @@ class Bus {
   msg() {
     return `El bus tiene una capacidad de ${this.capacidad} pasajeros, actualmente hay ${this.pasajeros} pasajeros y el conductor es ${this.conductor.nombre}`;
   }
+  test = () => {
+    return `El bus tiene una capacidad de ${this.capacidad} pasajeros, actualmente hay ${this.pasajeros} pasajeros y el conductor es ${this.conductor.nombre}`;
+  };
 }
 
 let conductor_1 = new Conductor("Juan", 123456);
@@ -62,3 +65,4 @@ let bus_1 = new Bus(50, conductor_1);
 bus_1.subir(10);
 bus_1.bajar(5);
 console.log(bus_1.msg());
+console.log(bus_1.test());

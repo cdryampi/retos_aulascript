@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejericios de eventos</title>
+    <link rel="stylesheet" href="./css/ejercicios.css" />
+  </head>
+  <body id="body">
+    <div id="splash">
+      <img src="./img/icon.svg" alt="icon" />
+      <p>Cargando.....</p>
+    </div>
+    <div id="content">
+      <header>
+        <h1>Eventos</h1>
+      </header>
+      <main>
+        <section class="container">
+          <h2>ejercicio 1</h2>
+          <p>Mostrar alerta.</p>
+          <button id="btn">Click me</button>
+        </section>
+        <section class="container">
+          <h2>ejercicio 2</h2>
+          <p>
+            Cambiar el color de fondo de la sección al hacer click en el botón.
+          </p>
+          <div class="wrapper">
+            <div class="div div1 bg-primary">
+              <p>Primer div</p>
+            </div>
+            <div class="div div2 bg-secondary">
+              <p>Segundo div</p>
+            </div>
+          </div>
+        </section>
+        <section class="container">
+          <h2>Ejericio 3</h2>
+          <p>Calculadora de dos números.</p>
+          <form id="calculadora">
+            <label for="num1">
+              Número 1
+              <input type="number" id="num1" />
+            </label>
+            <label for="num2">
+              Número 2
+              <input type="number" id="num2" />
+            </label>
+            <label for="result">
+              Resultado
+            <input type="number" id="result" disabled />
+            <button id="sum">Sumar</button>
+          </form>
+        </section>
+        <section class="container">
+          <h2>Ejercicio 4</h2>
+          <p>Mostrar el splash otra vez.</p>
+          <button id="spashBTN">Click me</button>
+        </section>
+        <section class="container">
+          <h2>Ejercicio 5</h2>
+          <p>Mostrar el id de un botón con solo una función.</p>
+          <button id="button_1" class="boton">Click me</button>
+          <button id="button_2" class="boton" >Click me</button>
+        </section>
+        <section class="container">
+          <h2>
+            Ejercicio 6
+          </h2>
+          <p>
+            Mostrar las coordenadas del mouse en la pantalla.
+          </p>
+          <form id="coordenadas">
+            <label for="coorX">
+              Coordenada X
+              <input type="number" id="coorX" disabled />
+            </label>
+            <label for="coorY">
+              Coordenada Y
+              <input type="number" id="coorY" disabled />
+            </label>
+          </form>
+        </section>
+        <section class="container">
+          <h2>Ejercicio 7</h2>
+          <p>Mostrar cambios de colores con el evento pasado</p>
+          <div class="wrapper_no_border">
+            <div class="div div1 bg-primary" id="e7_div_1">
+              <p>Primer div</p>
+            </div>
+            <div class="div div2 bg-secondary" id="e7_div_2">
+              <p>Segundo div</p>
+            </div>
+            <div class="div div3 bg-ternary" id="e7_div_3">
+              <p>Tercer div</p>
+            </div>
+        </section>
+        <section class="container">
+          <h2>Ejercicio 8</h2>
+          <p>
+            Mostrar el valor oculto al precionar una letra específica. Preciona el 1 para mostrar el primer div, el 2 para mostrar el segundo div y el 3 para mostrar el tercer div.
+          </p>
+          <div class="wrapper" id="e8_wrapper">
+            <div class="div div1_8 bg-primary hidden">
+              <p>Primer div</p>
+            </div>
+            <div class="div div2_8 bg-secondary hidden">
+              <p>Segundo div</p>
+            </div>
+            <div class="div div3_8 bg-ternary hidden">
+              <p>Tercer div</p>
+            </div>
+          </div>
+        </section>
+        <section class="container">
+          <h2>Ejercicio 10</h2>
+          <p>Manejador de eventos para evitar números</p>
+          <form id="letrasform">
+            <label for="letras">No se aceptan dígitos
+              <input type="text" id="letras" />
+            </label>
+          </form>
+        </section>
+      </main>
+  
+      <div id="alert" class="hidden">
+        <p>Este es un mensaje de alerta</p>
+      </div>
+    </div>
+    <div id="arrow" class="hidden">
+      <a href="#body" title="Ir arriba">
+        <img src="./img/arrow.svg" alt="arrow" />
+      </a>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
