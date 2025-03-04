@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./css/custom.css" />
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicios del DOM</h1>
+    </header>
+    <main>
+      <section id="ejercicio1">
+        <h2>Ejercicio 1</h2>
+        <p>Hola mundo!</p>
+        <button onclick="cambiarTitulo('Hola mundo con JavaScript')">
+          Haz click
+        </button>
+      </section>
+      <section id="ejercicio2">
+        <h2>Ejercicio 2</h2>
+        <div>
+          <p>Este es un párrafo</p>
+        </div>
+        <button onclick="cambiarColor()">Haz click</button>
+      </section>
+      <section id="ejercicio3">
+        <h2>Ejercicio 3</h2>
+        <p>crear nuevos divs</p>
+        <div class="container">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+        </div>
+        <button onclick="agregarCaja()">Añadir nueva caja</button>
+      </section>
+      <section id="ejercicio4">
+        <h2>Ejercicio 4</h2>
+        <p>Eliminar divs</p>
+        <div class="container">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <div class="box">3</div>
+          <div class="box">4</div>
+          <div class="box">5</div>
+        </div>
+        <button onclick="eliminarCaja()">Eliminar caja</button>
+      </section>
+      <section id="ejercicio5">
+        <h2>Ejercicio 5</h2>
+        <p>Añadir footcaption a la imagen</p>
+        <figure>
+          <img src="./img/python.jpg" alt="python" />
+          <figcaption class="hidden">Cosas de Python</figcaption>
+        </figure>
+        <button onclick="agregarPie()">Añadir pie de foto</button>
+      </section>
+      <section id="ejercicio6">
+        <h2>Ejercicio 6</h2>
+        <p>Mostrar las urls de las imágenes</p>
+        <div></div>
+        <button onclick="mostrarUrlImagenes()">Mostrar url imágenes</button>
+      </section>
+    </main>
+  </body>
+</html>

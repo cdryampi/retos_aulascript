@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.container div:nth-child(odd) {
+  background-color: #1b17e9;
+  padding: 1rem;
+}
+
+.container div:nth-child(even) {
+  background-color: #ec2424;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
