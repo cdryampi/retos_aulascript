@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio de enlaces</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>mostrar las urls de los enlaces de la página.</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Proyectos del freeCodeCamp</h2>
+
+        <div class="grid-container">
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+            alt="Dr. Norman Borlaug"
+          />
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+            alt="Random quote machine"
+          />
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+            alt="calculadora"
+          />
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+            alt="mapa"
+          />
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+            alt="wiki"
+          />
+          <img
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+            alt="tic tac toe"
+          />
+          <img src="./imgs/The-bell-curve.jpg" alt="meme code" />
+        </div>
+      </section>
+      <aside>
+        <p>Buscar enlaces de la página</p>
+        <button id="mostrarEnlaces">Mostrar enlaces</button>
+      </aside>
+    </main>
+    <aside id="results">
+      <h2>Enlaces de la página</h2>
+      <ul id="enlaces"></ul>
+    </aside>
+
+    <aside id="alerta">
+      <h2>Alerta</h2>
+      <p id="alertaMSG"></p>
+    </aside>
+    <script src="./main.js"></script>
+  </body>
+</html>
