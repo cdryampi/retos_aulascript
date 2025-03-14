@@ -7,13 +7,6 @@ export const footerData = [
     external: false,
   },
   {
-    id: 2,
-    title: "Retos",
-    url: "/retos",
-    title: "lista de retos",
-    external: false,
-  },
-  {
     id: 3,
     title: "github",
     url: "https://github.com/cdryampi/",

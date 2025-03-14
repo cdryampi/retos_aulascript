@@ -7,13 +7,6 @@ export const navbarData = [
     external: false,
   },
   {
-    id: 2,
-    title: "Retos",
-    url: "/retos",
-    title_url: "lista de retos",
-    external: false,
-  },
-  {
     id: 3,
     title: "github",
     url: "https://github.com/cdryampi/",

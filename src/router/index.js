@@ -15,12 +15,6 @@ const routes = [
     name: "reto-detalle",
     props: true,
   },
-  {
-    path: "/retos",
-    name: "retos",
-    component: RetosListDetail,
-    props: true,
-  },
 ];
 
 const router = createRouter({
