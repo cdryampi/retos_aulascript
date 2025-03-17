@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Tercios tienda</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="./img/Logo_Tienda-Tercios-1.webp"
+            alt="Conqueror Cards Logo"
+          />
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li>
+              <a class="nav-link" href="#banderas">Banderas</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#complementos">Complementos</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#libros">Libros</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container"></div>
+      <section id="hero">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <h1>¡Bienvenido a la tienda de Tercios!</h1>
+          <p>
+            ¡Aquí encontrarás todo lo que necesitas para tu recreación histórica
+            de la época de los Tercios!
+          </p>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Introduce tu email"
+            required
+          />
+          <input type="submit" id="submit" value="Enviar" />
+        </form>
+      </section>
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-fire" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Materiales de calidad</h2>
+              <p>
+                Todos nuestros productos están fabricados con los mejores
+                materiales para garantizar su durabilidad.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-fast-forward" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Envío rápido</h2>
+              <p>Realizamos envíos a toda España en un plazo de 48-72 horas.</p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Atención al cliente</h2>
+              <p>
+                Nuestro equipo de atención al cliente está disponible para
+                resolver cualquier duda que puedas tener.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works">
+          <h2>¿Quiénes era los Tercios españoles?</h2>
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/fgf6fGjSqYk?si=JvdUW7ql0qy7vazX"
+            frameborder="0"
+            height="315"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section id="pricing">
+          <div class="product" id="casco">
+            <div class="level">Casco de morrión</div>
+            <h2>130€</h2>
+            <ol>
+              <li>Material: Acero</li>
+              <li>Color: Plateado</li>
+              <li>Talla: Única</li>
+              <li>Disponibilidad: En stock</li>
+            </ol>
+            <button class="btn">Comprar</button>
+          </div>
+          <div class="product" id="banderas">
+            <div class="img-conatiner">
+              <img src="" alt="" />
+            </div>
+            <div class="level">Banderas</div>
+            <h2>30€</h2>
+            <ol>
+              <li>Material: Poliéster</li>
+              <li>Color: Variado</li>
+              <li>Tamaño: 1x1m</li>
+              <li>Disponibilidad: En stock</li>
+            </ol>
+            <button class="btn">Comprar</button>
+          </div>
+          <div class="product" id="complementos">
+            <div class="level">Complementos</div>
+            <h2>50€</h2>
+            <ol>
+              <li>Material: Cuero</li>
+              <li>Color: Marrón</li>
+              <li>Talla: Única</li>
+              <li>Disponibilidad: En stock</li>
+            </ol>
+            <button class="btn">Comprar</button>
+          </div>
+          <div class="product" id="libros">
+            <div class="level">Libros</div>
+            <h2>20€</h2>
+            <ol>
+              <li>Idioma: Español</li>
+              <li>Formato: Tapa blanda</li>
+              <li>Páginas: 200</li>
+              <li>Disponibilidad: En stock</li>
+            </ol>
+            <button class="btn">Comprar</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li>
+              <a href="#">Privacidad</a>
+            </li>
+            <li>
+              <a href="#">Terminos</a>
+            </li>
+            <li>
+              <a href="#">Contacto</a>
+            </li>
+          </ul>
+          <span> © 2025 Tercios Tienda </span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
