@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telefono US validator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto bg-gray-700">
+    <div class="flex flex-col justify-center items-center h-screen">
+      <div class="p-4">
+        <img
+          src="./fcc_primary.svg"
+          alt="freecodecamp"
+          class="w-15 h-10 block mx-auto"
+        />
+        <h1 class="text-white text-4xl text-center font-bold">
+          Telephone Number Validator
+        </h1>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <label for="user-input" class="text-white mt-2">
+          Enter a Number:
+        </label>
+        <input type="text" id="user-input" class="w-full p-2 mt-2 rounded-lg" />
+        <div class="flex flex-row justify-center items-center mt-2">
+          <button
+            class="bg-purple-700 text-white rounded-2xl p-2 mt-2 hover:bg-purple-800"
+            id="check-btn"
+          >
+            Check
+          </button>
+          <button
+            class="bg-purple-700 text-white rounded-2xl p-2 mt-2 hover:bg-purple-800 ml-3"
+            id="clear-btn"
+          >
+            Clear
+          </button>
+        </div>
+
+        <div
+          id="results-div"
+          class="text-white mt-2 justify-center items-center flex flex-col gap-5"
+        ></div>
+      </div>
+    </div>
+
+    <script src="telefono.js"></script>
+  </body>
+</html>
