@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center h-screen bg-gray-800">
+      <div class="p-4">
+        <img
+          src="./fcc_primary.svg"
+          alt="freecodecamp"
+          class="w-15 h-10 block mx-auto"
+        />
+        <h1 class="text-white text-4xl text-center font-bold">
+          Cash Register Project
+        </h1>
+      </div>
+      <div
+        id="change-due"
+        class="flex flex-col gap-5 justify-center items-center bg-white"
+      ></div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <label for="cash" class="text-white mt-2"
+          >Enter cash for costumer:</label
+        >
+        <input type="number" id="cash" class="w-full p-2 mt-2 rounded-lg" />
+        <div class="flex flex-row justify-center items-center mt-2">
+          <button
+            class="bg-purple-700 text-white rounded-2xl p-2 mt-2 hover:bg-purple-800"
+            id="purchase-btn"
+          >
+            Check
+          </button>
+        </div>
+
+        <div
+          class="bg-white mt-2 justify-center items-center flex flex-col gap-5"
+        >
+          <p id="price-display" class="text-gray-900 text-3xl font-bold">
+            $19.5
+          </p>
+        </div>
+        <h2 class="text-white text-2xl text-center font-bold">Cash Drawer</h2>
+        <div
+          id="cash-drawer-display"
+          class="text-gray-900 font-bold mt-2 justify-center items-center flex flex-col gap-5 bg-white p-2 rounded-lg text-2xl"
+        ></div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

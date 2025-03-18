@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto bg-gray-700">
+    <div class="flex flex-col justify-center items-center h-screen">
+      <div class="p-4">
+        <img
+          src="./fcc_primary.svg"
+          alt="freecodecamp"
+          class="w-15 h-10 block mx-auto"
+        />
+        <h1 class="text-white text-4xl text-center font-bold">
+          Pokémon Search App
+        </h1>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <label for="search-input" class="text-white mt-2">
+          Search for Pokémon Name or ID:
+        </label>
+        <input
+          type="text"
+          id="search-input"
+          class="w-full p-2 mt-2 rounded-lg"
+          placeholder="Search for Pokémon Name or ID"
+          autocomplete="off"
+        />
+        <button
+          class="bg-purple-700 text-white rounded-2xl p-2 mt-2 hover:bg-purple-800"
+          id="search-button"
+        >
+          Search
+        </button>
+        <div
+          class="bg-white h-[25vh] w-full mt-4 rounded-lg"
+          id="pokemon-container"
+        >
+          <div class="flex flex-col justify-center items-center h-full">
+            <p class="text-gray-500" id="pokemon-name"></p>
+            <p class="text-gray-500" id="pokemon-id"></p>
+            <p class="text-gray-500" id="weight"></p>
+            <p class="text-gray-500" id="height"></p>
+            <img
+              src=""
+              alt="pokemon"
+              id="pokemon-image"
+              class="hidden w-100 h-100"
+            />
+            <p id="types"></p>
+          </div>
+        </div>
+      </div>
+      <aside class="container mx-auto flex justify-center items-center">
+        <div class="relative overflow-x-auto">
+          <table
+            class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+          >
+            <thead
+              class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+            >
+              <tr>
+                <th scope="col" class="px-6 py-3">Base</th>
+                <th scope="col" class="px-6 py-3">Stats</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  HP:
+                </th>
+                <td class="px-6 py-4" id="hp"></td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Attack:
+                </th>
+                <td class="px-6 py-4" id="attack"></td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Defense:
+                </th>
+                <td class="px-6 py-4" id="defense"></td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Sp. Attack:
+                </th>
+                <td class="px-6 py-4" id="special-attack"></td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Sp. Defense:
+                </th>
+                <td class="px-6 py-4" id="special-defense"></td>
+              </tr>
+              <tr
+                class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200"
+              >
+                <th
+                  scope="row"
+                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                >
+                  Speed:
+                </th>
+                <td class="px-6 py-4" id="speed"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </aside>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
